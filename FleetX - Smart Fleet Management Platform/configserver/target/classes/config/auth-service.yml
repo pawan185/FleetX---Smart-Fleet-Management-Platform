@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db
+    username: postgres
+    password: 9860
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: dGhpc0lzQVN1cGVyU2VjcmV0S2V5Rm9yRmxlZXRYVGhhdE11c3RCZUF0TGVhc3QzMkJ5dGVz
+  expiration: 86400000
